@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { 
   LayoutDashboard, Box, Truck, BarChart2, 
-  Settings, Bell, Search, Filter, 
-  ChevronRight, ArrowLeft, Package, AlertTriangle,
-  Plus, X, Calendar, Layers, MapPin, Download, Database, Trash2, FileText
+  Search,  ArrowLeft, Package, 
+  Plus, X,Layers, MapPin, Download, Database, Trash2, FileText
 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGrid, LineChart, Line } from 'recharts';
