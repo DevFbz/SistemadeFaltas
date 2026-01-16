@@ -102,7 +102,7 @@ const Dashboard: React.FC = () => {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-sm">
           <div className="bg-[#0f172a] border border-slate-800 w-full max-w-lg rounded-[2.5rem] p-10 relative animate-in zoom-in-95 duration-200">
             <button onClick={() => setIsModalOpen(false)} className="absolute top-6 right-6 text-slate-500 hover:text-white transition-colors"><X size={24}/></button>
-            <h2 className="text-3xl font-black text-white mb-2 italic">Registrar Falta</h2>
+            <h2 className="text-3xl font-black text-white mb-2 italic">Registrar Falta!</h2>
             <p className="text-slate-500 text-sm mb-8">Preencha os dados da ocorrência operacional.</p>
             
             <form onSubmit={handleAddFalta} className="grid grid-cols-2 gap-6">
