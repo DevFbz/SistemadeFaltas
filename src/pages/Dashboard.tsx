@@ -48,7 +48,7 @@ const Dashboard: React.FC = () => {
       grupoRemessa: formData.grupoRemessa,
       dataFaturamento: formData.dataFaturamento,
       dataFalta: formData.dataFalta,
-      volume: String(formData.volume)
+      volume: (formData.volume)
     };
     setFaltas([nova, ...faltas]); // Adiciona no topo da lista
     setIsModalOpen(false);
@@ -134,7 +134,7 @@ const Dashboard: React.FC = () => {
 
               <div className="col-span-2">
                 <label className="text-[10px] font-black text-slate-500 uppercase mb-2 block ml-1 tracking-widest">Volume</label>
-                <input required type="number" placeholder="0" className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 outline-none focus:border-blue-500 text-white" value={formData.volume} onChange={e => setFormData({...formData, volume: e.target.value})} />
+                <input required type="text" placeholder="0" className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 outline-none focus:border-blue-500 text-white" value={formData.volume} onChange={e => setFormData({...formData, volume: e.target.value})} />
               </div>
 
               <button className="col-span-2 bg-blue-600 py-4 rounded-2xl font-black text-white mt-4 hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/20 active:scale-[0.98]">
