@@ -16,7 +16,7 @@ interface Falta {
   grupoRemessa: string;
   dataFaturamento: string;
   dataFalta: string;
-  volume: string;
+  volume: number;
 }
 
 const Dashboard: React.FC = () => {
@@ -134,7 +134,7 @@ const Dashboard: React.FC = () => {
 
               <div className="col-span-2">
                 <label className="text-[10px] font-black text-slate-500 uppercase mb-2 block ml-1 tracking-widest">Volume</label>
-                <input required type="text" placeholder="0" className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 outline-none focus:border-blue-500 text-white" value={formData.volume} onChange={e => setFormData({...formData, volume: e.target.value})} />
+                <input required type="number" placeholder="0" className="w-full bg-slate-900 border border-slate-800 rounded-xl p-3 outline-none focus:border-blue-500 text-white" value={formData.volume} onChange={e => setFormData({...formData, volume: e.target.value})} />
               </div>
 
               <button className="col-span-2 bg-blue-600 py-4 rounded-2xl font-black text-white mt-4 hover:bg-blue-500 transition-all shadow-xl shadow-blue-600/20 active:scale-[0.98]">
@@ -211,6 +211,7 @@ const Dashboard: React.FC = () => {
                     <th className="px-8 py-5 text-[10px] font-black uppercase text-slate-500 tracking-[0.2em]">Grupo/Remessa</th>
                     <th className="px-8 py-5 text-[10px] font-black uppercase text-slate-500 tracking-[0.2em]">Faturamento</th>
                     <th className="px-8 py-5 text-[10px] font-black uppercase text-slate-500 tracking-[0.2em]">Data Falta</th>
+                    <th className="px-8 py-5 text-[10px] font-black uppercase text-slate-500 tracking-[0.2em]">Descrição</th>
                     <th className="px-8 py-5 text-[10px] font-black uppercase text-slate-500 tracking-[0.2em] text-center">Volume</th>
                     <th className="px-8 py-5 text-right"></th>
                   </tr>
